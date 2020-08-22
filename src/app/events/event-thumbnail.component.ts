@@ -8,7 +8,7 @@ import {Component, Input} from '@angular/core'
   <div>Date: {{event?.date}}</div>
   <div [ngStyle]="getStartTimeStyle()" [ngSwitch]="event?.time">
       Time: {{event?.time}}
-      <span *ngSwitchCase="'08:00 am'">(Early Start)</span>
+      <span *ngSwitchCase="'8:00 am'">(Early Start)</span>
       <span *ngSwitchCase="'10:00 am'">(Late Start)</span>
       <span *ngSwitchDefault>(Normal Start)</span>
   </div>
